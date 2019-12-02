@@ -8,6 +8,10 @@
 
 > the sexiest shell scripts + Makefiles + docker-compose for luxuriously un-cluttered virtual environments
 
+## pyenv + pyenv-virtualenv
+
+- project setup gist #1 [for a guide to virtual environments](https://medium.com/p/8af34aa106ac/)
+
 ## Author
 
 👤 **Lora Johns**
