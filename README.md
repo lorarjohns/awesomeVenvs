@@ -12,6 +12,10 @@
 
 - project setup gist #1 [for a guide to virtual environments](https://medium.com/p/8af34aa106ac/)
 
+## tmux + vm deployment
+
+- [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/pyenv_cheat_sheet.md)
+
 ## Author
 
 👤 **Lora Johns**
