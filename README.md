@@ -14,7 +14,7 @@
 
 ## tmux + vm deployment
 
-- [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/pyenv_cheat_sheet.md) for using tmux to manage VMs over SSH
+- [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/tmux-cheatsheet.md) for using tmux to manage VMs over SSH
 
 ## Author
 
