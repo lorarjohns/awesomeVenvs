@@ -15,6 +15,7 @@
 ## tmux + vm deployment
 
 - [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/tmux-cheatsheet.md) for using tmux to manage VMs over SSH
+- [tmux configuration file](https://github.com/lorarjohns/awesomeVenvs/blob/master/.tmux.conf) for custom settings
 
 ## Author
 
