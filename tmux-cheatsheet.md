@@ -2,17 +2,27 @@
 
 A solution to keep multiple processes running on a VM for several hours over a single SSH session.
 
+## Managing sessions
+
 start a new session
 ```
 tmux
 ```
+
 start a new named session
 ```
 tmux new -s [name]
 ```
-attach to a new session
+
+start a session in detached mode
+```
+tmux new -s [name] -d
+```
+
+attach to a session
 
 ```
+tmux attach -t [name]
 tmux a -t [name]
 ```
 
@@ -29,24 +39,54 @@ tmux detach
 list sessions
 ```
 tmux list-sessions
+tmux ls
 ```
 
-kill a session
+kill a session (when detached)
 ```
-ctrl - b - x
-```
-
-split pane horizontally
-```
-ctrl - b - "
+tmux kill-session -t [name]
 ```
 
-split pane vertically
+kill server (and all sessions + running jobs)
 ```
-ctrl - b - %
+tmux kill-server
 ```
+
+## Bind key commands
+
+To invoke these commands, first hit the bind key. The default is `CTRL + b`.
+If you use the [config file in this repo](https://github.com/lorarjohns/awesomeVenvs/blob/master/.tmux.conf), it is `CTRL + a`.
+
+Press `CTRL+a`, **release it**, and then press the desired command key.
+
+kill a session (when attached)
+```
+CTRL+a x -y
+exit + ENTER
+```
+
+split pane horizontally (one pane on top of the other)
+```
+CTRL+a "
+```
+
+split pane vertically (two panes side by side)
+```
+CTRL+a %
+```
+**note**: Splitting a _pane_ does not create a new _session_.
 
 move to a pane
 ```
-ctrl - b - [arrow key]
+CTRL+a [arrow keys]
+```
+
+send command to all panes simultaneously
+```
+CTRL+a :setw synchronize-panes
+```
+
+swap panes
+```
+CTRL+a o
 ```
