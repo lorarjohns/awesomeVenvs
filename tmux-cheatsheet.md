@@ -41,6 +41,10 @@ list sessions
 tmux list-sessions
 tmux ls
 ```
+rename a session
+```
+tmux rename-session -t [old-name] "new-name"
+```
 
 kill a session (when detached)
 ```
