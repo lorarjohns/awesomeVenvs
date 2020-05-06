@@ -22,6 +22,31 @@ grep -iR "Anaconda3" ~
 source ~/.zshrc
 ```
 
+## install pyen and pyenv-virtualenv (Ubuntu/Linux instructions)
+
+This is the easiest way to install pyenv and friends:
+
+```sh
+$ curl https://pyenv.run | bash
+```
+
+The [installer](https://github.com/pyenv/pyenv-installer) creates the PYENV_ROOT directory and adds all the following plugins:
+
+```{bash}
+if [ -n "${USE_GIT_URI}" ]; then
+  GITHUB="git://github.com"
+else
+  GITHUB="https://github.com"
+fi
+
+checkout "${GITHUB}/pyenv/pyenv.git"            "${PYENV_ROOT}"
+checkout "${GITHUB}/pyenv/pyenv-doctor.git"     "${PYENV_ROOT}/plugins/pyenv-doctor"
+checkout "${GITHUB}/pyenv/pyenv-installer.git"  "${PYENV_ROOT}/plugins/pyenv-installer"
+checkout "${GITHUB}/pyenv/pyenv-update.git"     "${PYENV_ROOT}/plugins/pyenv-update"
+checkout "${GITHUB}/pyenv/pyenv-virtualenv.git" "${PYENV_ROOT}/plugins/pyenv-virtualenv"
+checkout "${GITHUB}/pyenv/pyenv-which-ext.git"  "${PYENV_ROOT}/plugins/pyenv-which-ext"
+```
+
 ## install pyenv and pyenv-virtualenv (Homebrew/macOS instructions)
 
 for linux/non-Homebrew installations, install from source.
