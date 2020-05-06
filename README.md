@@ -17,6 +17,10 @@
 - [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/tmux-cheatsheet.md) for using tmux to manage VMs over SSH
 - [tmux configuration file](https://github.com/lorarjohns/awesomeVenvs/blob/master/.tmux.conf) for custom settings
 
+## git commands
+
+- [cheat sheet](https://github.com/lorarjohns/awesomeVenvs/blob/master/git-out.md) for git commands you don't want to search for on StackExchange
+
 ## Author
 
 👤 **Lora Johns**
