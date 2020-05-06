@@ -23,7 +23,7 @@ $ git checkout -b <branch_name>
 Then:
 
 ```{bash}
-$ git --set-upstream-to <remote_name> <branch_name>
+$ git branch --set-upstream-to <remote_name> <branch_name>
 ``` 
 or
 
