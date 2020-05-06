@@ -22,7 +22,7 @@ grep -iR "Anaconda3" ~
 source ~/.zshrc
 ```
 
-## install pyen and pyenv-virtualenv (Ubuntu/Linux instructions)
+## install pyenv and pyenv-virtualenv (Ubuntu/Linux instructions)
 
 This is the easiest way to install pyenv and friends:
 
